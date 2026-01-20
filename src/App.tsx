@@ -164,7 +164,7 @@ export default function App() {
                     </a>
                   </div>
                   <p className="text-sm text-muted-foreground mt-2">
-                    Vibe-coded project exploring multi-source RAG implementations
+                    project exploring multi-source RAG implementations
                   </p>
                 </div>
 
@@ -240,8 +240,7 @@ export default function App() {
                 <span className="text-sm text-muted-foreground font-mono">2025</span>
               </div>
               <p className="text-base leading-relaxed">
-                Built complete n8n integration supporting both traditional and MCP (Model Context Protocol) features. 
-                Demonstrates ability to deliver production-grade integrations with complex requirements.
+              Engineered an external orchestration layer using Rust and Podman to manage database container lifecycles. Developed the official n8n integration suite, creating adapters that bridge standard database operations with existing Model Context Protocol (MCP) endpoints.
               </p>
             </div>
 
@@ -272,7 +271,7 @@ export default function App() {
             <div>
               <h3 className="text-lg font-mono font-bold mb-4">Languages</h3>
               <div className="flex flex-wrap gap-3">
-                {['Rust', 'Scala', 'Python', 'TypeScript', 'Go'].map((skill) => (
+                {['Rust', 'Scala', 'Python', 'TypeScript'].map((skill) => (
                   <span key={skill} className="px-4 py-2 bg-secondary text-secondary-foreground font-mono text-sm">
                     {skill}
                   </span>
