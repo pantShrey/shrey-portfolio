@@ -50,7 +50,7 @@ export default function App() {
                 <span>github</span>
               </a>
               <a
-                href="https://linkedin.com/in/shrey-pant"
+                href="https://linkedin.com/in/shreypant"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-accent hover:text-foreground transition-colors"
@@ -347,7 +347,7 @@ export default function App() {
               <span>github.com/pantShrey</span>
             </a>
             <a
-              href="https://linkedin.com/in/shrey-pant"
+              href="https://linkedin.com/in/shreypant"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 text-lg font-mono text-accent hover:text-foreground transition-colors"
