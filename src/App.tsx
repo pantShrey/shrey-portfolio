@@ -76,36 +76,8 @@ export default function App() {
           <h2 className="text-3xl font-mono font-bold mb-12">Featured Projects</h2>
           
           <div className="space-y-12">
-            {/* Bitcask Implementation */}
-            <div className="space-y-4">
-              <div className="flex items-start justify-between">
-                <div>
-                  <h3 className="text-2xl font-mono font-bold">Bitcask Implementation</h3>
-                  <p className="text-sm text-muted-foreground font-mono mt-1">Rust · Log-Structured Storage</p>
-                </div>
-                <a
-                  href="https://github.com/pantShrey/bitcask_impl"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 text-accent hover:text-foreground transition-colors"
-                >
-                  <ExternalLink size={16} />
-                </a>
-              </div>
-              <p className="text-base leading-relaxed">
-                A persistent, log-structured key-value store inspired by Bitcask. Implements fast writes using 
-                append-only logs, in-memory indexing with HashMap, automatic compaction, and crash recovery. 
-                Demonstrates deep understanding of database internals, memory management, and performance optimization.
-              </p>
-              <div className="flex flex-wrap gap-2 pt-2">
-                <span className="px-3 py-1 bg-secondary text-secondary-foreground text-sm font-mono">Rust</span>
-                <span className="px-3 py-1 bg-secondary text-secondary-foreground text-sm font-mono">KV Store</span>
-                <span className="px-3 py-1 bg-secondary text-secondary-foreground text-sm font-mono">Storage</span>
-              </div>
-            </div>
-
-            {/* Vilcacora */}
-            <div className="border-t border-border pt-12 space-y-4">
+                        {/* Vilcacora */}
+                        <div className="border-t border-border pt-12 space-y-4">
               <div className="flex items-start justify-between">
                 <div>
                   <h3 className="text-2xl font-mono font-bold">Vilcacora</h3>
@@ -142,6 +114,57 @@ export default function App() {
                 <span className="px-3 py-1 bg-secondary text-secondary-foreground text-sm font-mono">GSoC</span>
               </div>
             </div>
+
+          <div className="space-y-4">
+              <div className="flex items-start justify-between">
+                <div>
+                  <h3 className="text-2xl font-mono font-bold">Purrvision Control Plane</h3>
+                  <p className="text-sm text-muted-foreground font-mono mt-1">Kubernetes · Orchestration · Python</p>
+                </div>
+                <a href="https://github.com/pantShrey/purrvision" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-accent hover:text-foreground transition-colors">
+                  <ExternalLink size={16} />
+                </a>
+              </div>
+              <p className="text-base leading-relaxed">
+                A production-grade control plane for provisioning isolated WooCommerce environments on Kubernetes. 
+                Engineered an asynchronous orchestrator pattern using FastAPI, Redis, and RQ workers to manage automated 
+                Helm deployments. Implemented a self-healing sidecar pattern for database initialization and enforced 
+                strict zero-trust tenant security via dedicated namespaces and hard resource quotas.
+              </p>
+              <div className="flex flex-wrap gap-2 pt-2">
+                {['Kubernetes', 'Helm', 'Python', 'System Design', 'Redis'].map(tag => (
+                  <span key={tag} className="px-3 py-1 bg-secondary text-secondary-foreground text-xs font-mono">{tag}</span>
+                ))}
+              </div>
+            </div>
+            {/* Bitcask Implementation */}
+            <div className="space-y-4">
+              <div className="flex items-start justify-between">
+                <div>
+                  <h3 className="text-2xl font-mono font-bold">Bitcask Implementation</h3>
+                  <p className="text-sm text-muted-foreground font-mono mt-1">Rust · Log-Structured Storage</p>
+                </div>
+                <a
+                  href="https://github.com/pantShrey/bitcask_impl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 text-accent hover:text-foreground transition-colors"
+                >
+                  <ExternalLink size={16} />
+                </a>
+              </div>
+              <p className="text-base leading-relaxed">
+                A persistent, log-structured key-value store inspired by Bitcask. Implements fast writes using 
+                append-only logs, in-memory indexing with HashMap, automatic compaction, and crash recovery. 
+                Demonstrates deep understanding of database internals, memory management, and performance optimization.
+              </p>
+              <div className="flex flex-wrap gap-2 pt-2">
+                <span className="px-3 py-1 bg-secondary text-secondary-foreground text-sm font-mono">Rust</span>
+                <span className="px-3 py-1 bg-secondary text-secondary-foreground text-sm font-mono">KV Store</span>
+                <span className="px-3 py-1 bg-secondary text-secondary-foreground text-sm font-mono">Storage</span>
+              </div>
+            </div>
+
 
             {/* Other Notable Projects */}
             <div className="border-t border-border pt-12 space-y-4">
@@ -311,6 +334,16 @@ export default function App() {
                   <span key={skill} className="px-4 py-2 bg-secondary text-secondary-foreground font-mono text-sm">
                     {skill}
                   </span>
+                ))}
+              </div>
+            </div>
+            <div className="space-y-4">
+              <h3 className="text-lg font-mono font-bold mb-4">
+                Cloud & Orchestration
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                {['Kubernetes', 'Helm', 'Docker', 'Podman', 'RabbitMQ', 'Redis'].map(skill => (
+                  <span key={skill} className="px-3 py-1 bg-secondary text-secondary-foreground font-mono text-sm">{skill}</span>
                 ))}
               </div>
             </div>
